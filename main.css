@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;1,300;1,400;1,600&family=Inter:wght@200;500;600;700&family=Rajdhani:wght@300&display=swap');
+
+*{
+    font-family: var(--font-base);
+}
+
+
+
+:root{
+    --font-base: "Bai Jamjure";
+    --sideBar-width:25em ;
+    --primery-color: rgba(228, 237, 53, 0.933);
+    --scondry-color: #718E8B;
+    --color-base:  #09203f  ;
+}
+
+
+body{
+    background: var(--scondry-color)
+}
+
+
+a{
+    
+    width: 15rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    color: white !important; 
+    text-decoration: none;
+    transition: all 0.4s ease  !important;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 25px !important;
+}
+
+a:active{
+    background:var(--primery-color) !important;
+}
+
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+.navbar .nav-link:hover{
+    color: var(--primery-color)!important;
+  
+}
+
+h1{
+    font-family: var(--font-base);
+    font-size: 90px !important;
+    color: var(--scondry-color)
+
+}
+.btn{
+    background-color: var(--primery-color) !important;
+    color:  #537895  !important;
+    border-radius: 2rem;
+   height: 3rem;
+   border-color: #537895;
+   box-shadow: #09203f;
+}
+.btn:hover{
+    box-shadow: #09203f;
+}
+#welcome{
+    font-size: 50px;
+    margin-bottom: -1rem !important;
+    color: #ffff;
+    font-weight: bold;
+    border-color: #537895 ;
+}
+#cs{
+    
+    font-size: 25px;
+    padding-left:1rem ;
+    width: 40rem;
+    margin-right: 3rem;
+   
+}
+.full-height{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 120px;
+   
+}
+
+.card{
+
+    width: 18rem !important;
+    border-radius: 2rem !important;
+    
+}
+
+.shadow-effect:hover{
+    box-shadow: -5px 7px 0 0 var(--primery-color) ;
+
+}
+
+ 
+
+@media(min-width: 992px){
+    .navbar{
+        min-height: 110vh ;
+        width: var(--sideBar-width);
+        margin-top: -5rem;
+       background:var(--scondry-color);
+      
+    }
+   .navbar .nav-link:active{
+    
+   }
+   img{
+    width: 15rem !important;
+   }
+
+ #content-warpper{
+    padding-left: var(--sideBar-width);
+
+   
+
+ }
+
+}
